@@ -1,0 +1,339 @@
+.add-expense-form {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.add-expense-form h1 {
+  margin-bottom: 24px;
+  font-size: 1.8rem;
+}
+
+.ocr-section, .sms-section, .manual-section {
+  margin-bottom: 24px;
+}
+
+.ocr-section h3, .sms-section h3, .manual-section h3 {
+  margin-bottom: 16px;
+  color: #a3e635;
+  font-size: 1.2rem;
+}
+
+.ocr-section input[type="file"] {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 12px;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+}
+
+.scanning-text {
+  color: #a3e635;
+  margin-top: 12px;
+  font-size: 0.9rem;
+}
+
+.ocr-result {
+  margin-top: 12px;
+  color: #888;
+  font-size: 0.85rem;
+}
+
+.sms-section textarea {
+  width: 100%;
+  padding: 12px;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 12px;
+  color: white;
+  margin-bottom: 12px;
+  font-family: monospace;
+  resize: vertical;
+}
+
+.sms-section textarea:focus {
+  outline: none;
+  border-color: #a3e635;
+}
+
+.card {
+  background: #111;
+  border-radius: 20px;
+  padding: 20px;
+  border: 1px solid #222;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #888;
+  font-size: 0.85rem;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 12px;
+  color: white;
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #a3e635;
+}
+
+.type-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.type-btn {
+  flex: 1;
+  padding: 12px;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.type-btn.active-debit {
+  background: rgba(225, 29, 72, 0.2);
+  border-color: #e11d48;
+  color: #e11d48;
+}
+
+.type-btn.active-credit {
+  background: rgba(163, 230, 53, 0.2);
+  border-color: #a3e635;
+  color: #a3e635;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #a3e635, #84cc16);
+  color: #0a0a0a;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 40px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.2s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(163, 230, 53, 0.3);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #a3e635;
+  color: #a3e635;
+  padding: 10px 20px;
+  border-radius: 40px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.2s;
+}
+
+.btn-outline:hover {
+  background: rgba(163, 230, 53, 0.1);
+}
+
+@media (max-width: 768px) {
+  .add-expense-form {
+    padding: 0 12px;
+  }
+  
+  .type-buttons {
+    flex-direction: column;
+  }
+  
+  .card {
+    padding: 16px;
+  }
+}
+
+.add-expense-form {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.add-expense-form h1 {
+  margin-bottom: 24px;
+  font-size: 1.8rem;
+}
+
+.ocr-section, .sms-section, .manual-section {
+  margin-bottom: 24px;
+}
+
+.ocr-section h3, .sms-section h3, .manual-section h3 {
+  margin-bottom: 16px;
+  color: #a3e635;
+  font-size: 1.2rem;
+}
+
+.ocr-section input[type="file"] {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 12px;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+}
+
+.scanning-text {
+  color: #a3e635;
+  margin-top: 12px;
+  font-size: 0.9rem;
+}
+
+.ocr-result {
+  margin-top: 12px;
+  color: #888;
+  font-size: 0.85rem;
+}
+
+.sms-section textarea {
+  width: 100%;
+  padding: 12px;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 12px;
+  color: white;
+  margin-bottom: 12px;
+  font-family: monospace;
+  resize: vertical;
+}
+
+.sms-section textarea:focus {
+  outline: none;
+  border-color: #a3e635;
+}
+
+.card {
+  background: #111;
+  border-radius: 20px;
+  padding: 20px;
+  border: 1px solid #222;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #888;
+  font-size: 0.85rem;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 12px;
+  color: white;
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #a3e635;
+}
+
+.type-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.type-btn {
+  flex: 1;
+  padding: 12px;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.type-btn.active-debit {
+  background: rgba(225, 29, 72, 0.2);
+  border-color: #e11d48;
+  color: #e11d48;
+}
+
+.type-btn.active-credit {
+  background: rgba(163, 230, 53, 0.2);
+  border-color: #a3e635;
+  color: #a3e635;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #a3e635, #84cc16);
+  color: #0a0a0a;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 40px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.2s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(163, 230, 53, 0.3);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #a3e635;
+  color: #a3e635;
+  padding: 10px 20px;
+  border-radius: 40px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.2s;
+}
+
+.btn-outline:hover {
+  background: rgba(163, 230, 53, 0.1);
+}
+
+@media (max-width: 768px) {
+  .add-expense-form {
+    padding: 0 12px;
+  }
+  
+  .type-buttons {
+    flex-direction: column;
+  }
+  
+  .card {
+    padding: 16px;
+  }
+}

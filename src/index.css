@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Outfit:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #080909;
+  --s1: #0d1010;
+  --s2: #121616;
+  --s3: #171b1b;
+  --s4: #1d2222;
+  --lime: #c9f135;
+  --lime2: #aed120;
+  --ld: rgba(201, 241, 53, 0.13);
+  --lg: rgba(201, 241, 53, 0.07);
+  --lb: rgba(201, 241, 53, 0.25);
+  --teal: #05e8ca;
+  --red: #ff3f5e;
+  --amber: #ffb347;
+  --purple: #a78bfa;
+  --blue: #38bdf8;
+  --green: #4ade80;
+  --t1: #edf2f2;
+  --t2: #7a9f9f;
+  --t3: #3d5c5c;
+  --t4: #1e3535;
+  --t5: #0f2020;
+  --r: 14px;
+  --rs: 9px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--t1);
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Syne', sans-serif;
+  letter-spacing: -0.025em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  font-family: 'Outfit', sans-serif;
+}
+
+input, select, textarea {
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--s1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--t4);
+  border-radius: 3px;
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 22px;
+  border-radius: var(--rs);
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.18s;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  white-space: nowrap;
+}
+
+.btn-lime {
+  background: var(--lime);
+  color: #060808;
+}
+
+.btn-lime:hover {
+  background: var(--lime2);
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--t4);
+  color: var(--t2);
+}
+
+.btn-outline:hover {
+  border-color: var(--lime);
+  color: var(--lime);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--t2);
+  border: 1px solid transparent;
+}
+
+.btn-ghost:hover {
+  background: var(--s3);
+  color: var(--t1);
+}
+
+.btn-sm {
+  padding: 7px 14px;
+  font-size: 12px;
+}
+
+.btn-lg {
+  padding: 13px 30px;
+  font-size: 16px;
+}
+
+/* Forms */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--t2);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+input, select, textarea {
+  background: var(--s2);
+  border: 1px solid var(--t4);
+  border-radius: var(--rs);
+  color: var(--t1);
+  padding: 11px 14px;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.18s, box-shadow 0.18s;
+  width: 100%;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--lime);
+  box-shadow: 0 0 0 3px rgba(201, 241, 53, 0.08);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Cards */
+.card {
+  background: var(--s1);
+  border: 1px solid var(--t4);
+  border-radius: var(--r);
+  padding: 22px;
+}
+
+.card-sm {
+  padding: 16px;
+}
+
+/* Messages */
+.error-msg {
+  background: rgba(255, 63, 94, 0.1);
+  border: 1px solid rgba(255, 63, 94, 0.25);
+  color: var(--red);
+  border-radius: var(--rs);
+  padding: 10px 14px;
+  font-size: 13px;
+  margin-bottom: 14px;
+}
+
+.success-msg {
+  background: rgba(5, 232, 202, 0.1);
+  border: 1px solid rgba(5, 232, 202, 0.25);
+  color: var(--teal);
+  border-radius: var(--rs);
+  padding: 10px 14px;
+  font-size: 13px;
+  margin-bottom: 14px;
+}
+
+/* Toast */
+.toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  background: var(--s2);
+  border: 1px solid var(--t4);
+  border-radius: var(--rs);
+  padding: 12px 18px;
+  font-size: 14px;
+  color: var(--t1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  animation: slideIn 0.25s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .btn {
+    padding: 9px 16px;
+    font-size: 13px;
+  }
+
+  input, select, textarea {
+    font-size: 16px;
+  }
+}

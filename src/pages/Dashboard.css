@@ -1,0 +1,18 @@
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  background: #0a0a0a;
+}
+
+.dashboard-main {
+  flex: 1;
+  padding: 24px 32px;
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .dashboard-main {
+    padding: 16px;
+    margin-bottom: 60px;
+  }
+}

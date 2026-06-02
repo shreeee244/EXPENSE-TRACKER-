@@ -1,0 +1,103 @@
+.dashboard-view h1 {
+  margin-bottom: 24px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.stat-card {
+  background: #111;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  border: 1px solid #222;
+}
+
+.stat-title {
+  display: block;
+  color: #888;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.stat-value.positive {
+  color: #a3e635;
+}
+
+.stat-value.negative {
+  color: #e11d48;
+}
+
+.charts-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.chart-card {
+  background: #111;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid #222;
+}
+
+.chart-card h3 {
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.recent-section {
+  background: #111;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid #222;
+}
+
+.recent-section h3 {
+  margin-bottom: 16px;
+}
+
+.recent-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #222;
+}
+
+.recent-item:last-child {
+  border-bottom: none;
+}
+
+.recent-amount {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.no-data {
+  color: #666;
+  text-align: center;
+  padding: 40px;
+}
+
+.loading {
+  text-align: center;
+  padding: 60px;
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .charts-row { grid-template-columns: 1fr; }
+  .stat-value { font-size: 1.2rem; }
+}
