@@ -5,7 +5,7 @@ A full-stack expense tracking application with real data storage, authentication
 ## 📁 Project Structure
 
 ```
-expense-ai/
+expense-ai/ 
 ├── src/
 │   ├── main.jsx                 # React entry point
 │   ├── App.jsx                  # Root component
